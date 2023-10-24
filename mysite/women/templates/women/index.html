@@ -27,5 +27,17 @@
     <li>{{dictikDict.key2}}</li>
 </ul>
 <h5>Значение переменной типа boolean: {{boolchickBool}}</h5>
+<ul>
+    {% for st in students %}
+    <li><h2>{{ st.FIO }} </h2>
+        <p>{{ st.interests }}</p>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+
+
+    </li>
+    {% endfor %}
+</ul>
 </body>
 </html>

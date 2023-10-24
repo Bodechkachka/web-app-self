@@ -3,6 +3,14 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseBadRequest, HttpResponseForbidden, HttpResponseServerError, Http404
 
 # Create your views here.
+data_db = [
+    {'id': 1, 'FIO': 'Буренок Дмитрий', 'interests': 'Рисование, футбол', 'is_smoke': False},
+    {'id': 2, 'FIO': 'Горабанёв Кирилл Артёмович', 'interests': 'Бокс, вязание', 'is_smoke': False},
+    {'id': 3, 'FIO': 'Капшукова Дарья Руслановна', 'interests': 'Рисование, футбол', 'is_smoke': False},
+    {'id': 4, 'FIO': 'Кашаева Раяна', 'interests': 'Бокс, вязание', 'is_smoke': False},
+    {'id': 3, 'FIO': 'Миколадзе Антон Алексеевич', 'interests': 'история, литература', 'is_smoke': True},
+]
+
 def index(request):
     if (request.GET):
         gett = request.GET
@@ -25,7 +33,8 @@ def index(request):
             'listikList': listikList,
             'tuplikTuple': tuplikTuple,
             'dictikDict': dictikDict,
-            'boolchickBool': boolchickBool}
+            'boolchickBool': boolchickBool,
+            'students': data_db}
     return render(request, 'women/index.html', context=data)
 
 def categories(request):
