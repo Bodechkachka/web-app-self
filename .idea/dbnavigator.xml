@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -21,11 +21,12 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="28957a50-465c-437d-8919-e40dd9c3810b" object-ref="schemas/main/tables/women_students" />
+      <object connection-id="28957a50-465c-437d-8919-e40dd9c3810b" object-ref="schemas/main/tables/women_favoritebooks" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="28957a50-465c-437d-8919-e40dd9c3810b" dataset="main.women_students" active-filter-id="" />
+    <filter-actions connection-id="28957a50-465c-437d-8919-e40dd9c3810b" dataset="main.women_favoritebooks" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />

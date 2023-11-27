@@ -31,3 +31,14 @@ class Students(models.Model):
 
     def __str__(self):
         return self.full_name
+
+class FavoriteBooks(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.CharField(max_length=100)
+    published_date = models.CharField(max_length=10)
+    is_digit_version = models.BooleanField(default=True)
+    time_create = models.DateTimeField(auto_now_add=True)
+    time_update = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
