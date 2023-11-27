@@ -20,3 +20,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+'''
+python manage.py makemigrations  создание миграции
+python manage.py sqlmigrate women 0001 просмотр sql запроса миграции
+python manage.py migrate выполнение миграции
+'''

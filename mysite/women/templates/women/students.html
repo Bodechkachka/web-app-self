@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<ul>
+    {% for st in students %}
+        {% if st.sex == "M" %}
+            <li>
+                <s><h2>{{ st.FIO }} </h2></s>
+                <p>{{ st.sex }}</p>
+            {% if not forloop.last %}
+            <hr>
+            {% endif %}
+            </li>
+        {% elif st.sex == "F" %}
+            <li>
+                <u><h2>{{ st.FIO }} </h2></u>
+                <p>{{ st.sex }}</p>
+            {% if not forloop.last %}
+            <hr>
+            {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+</body>
+</html>

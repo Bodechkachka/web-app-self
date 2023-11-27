@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<h1>Строка: {{title}}</h1>
+<p>Целое число: {{intNumber}}</p>
+<p>Вещественное число: {{floatNumber}}</p>
+<p>Комплексное число: {{complexNumber}}</p>
+<p>Вывод множества: {{setickSet}}</p>
+<ol>Список из четырёх элементов:
+    <li>{{listikList.0}}</li>
+    <li>{{listikList.1}}</li>
+    <li>{{listikList.2}}</li>
+    <li>{{listikList.3}}</li>
+</ol>
+<ol type="A">Кортеж из трёх элементов, последний из которых список из двух элементов:
+    <li>{{tuplikTuple.0}}</li>
+    <li>{{tuplikTuple.1}}</li>
+    <li>{{tuplikTuple.2.0}}</li>
+    <li>{{tuplikTuple.2.1}}</li>
+</ol>
+<ul>Словарь из двух элементов:
+    <li>{{dictikDict.key1}}</li>
+    <li>{{dictikDict.key2}}</li>
+</ul>
+<h5>Значение переменной типа boolean: {{boolchickBool}}</h5>
+
+{% include 'women/back to main.html' %}
+
+</body>
+</html>
